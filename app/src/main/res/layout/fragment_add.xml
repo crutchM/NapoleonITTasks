@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="120dp"
+        android:hint="write a product name"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/addcount"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="268dp"
+        android:hint="write count"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/addurlonpicture"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:hint="write url of photo"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="350dp"></EditText>
+
+    <EditText
+        android:id="@+id/addtype"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="196dp"
+        android:hint="erite type of product"
+        ></EditText>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:text="add pos"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

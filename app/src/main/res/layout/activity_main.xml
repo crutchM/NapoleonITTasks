@@ -4,93 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/id"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintTop_toTopOf="@+id/tv"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintTop_toTopOf="@+id/tv2"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
+    tools:context="com.example.napoleonittask.activities.MainActivity"
+    android:id="@+id/main_menu" >
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:text="add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/count"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv4"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/type"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="96dp"
-        app:layout_constraintBottom_toTopOf="@+id/add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="112dp"
-        android:text="Write index of product"
+        android:orientation="vertical"
+        android:id="@+id/main"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="28dp"
-        android:text="write a name of product"
-        app:layout_constraintTop_toBottomOf="@+id/id"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:text="write count"
-        app:layout_constraintBottom_toTopOf="@+id/count"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="223dp"
-        android:layout_height="36dp"
-        android:text="write a type"
-        app:layout_constraintBottom_toTopOf="@+id/type"
-        tools:layout_editor_absoluteX="94dp"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        ></LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
