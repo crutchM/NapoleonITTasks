@@ -1,4 +1,4 @@
-package com.example.napoleonittask
+package com.example.napoleonittask.data
 
 import android.os.Parcel
 import android.os.Parcelable

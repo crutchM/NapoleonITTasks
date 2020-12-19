@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.napoleonittask.Presenters.LoginPresenter
 import com.example.napoleonittask.R
-import com.example.napoleonittask.activities.SearchViews.SearchViewLogin
+import com.example.napoleonittask.SearchViews.SearchViewLogin
 import kotlinx.android.synthetic.main.activity_authorisation.*
 
 class AuthActivity : AppCompatActivity(), SearchViewLogin {

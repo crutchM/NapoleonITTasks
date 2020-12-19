@@ -2,7 +2,7 @@ package com.example.napoleonittask.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.napoleonittask.Product
+import com.example.napoleonittask.data.Product
 import com.example.napoleonittask.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_more_info.*

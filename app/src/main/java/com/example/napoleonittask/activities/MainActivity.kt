@@ -14,12 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var auth = "null"
+        var auth = true
         val intent = Intent(this, AuthActivity::class.java)
-        if (auth == null) {
+        if (auth) {
             startActivity(intent)
             val newauth = intent.getParcelableExtra<Parcelable>("auth")
-            auth = newauth.toString()
         }
         supportFragmentManager.beginTransaction().add(R.id.main, MenuFragment()).commit()
         if(premissions == 1)

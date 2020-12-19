@@ -1,5 +1,6 @@
 package com.example.napoleonittask
 
+import com.example.napoleonittask.data.Product
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -16,7 +17,8 @@ class ExampleUnitTest {
     }
     @Test
     fun creationIsCorrect(){
-        val product = Product(0, "box", "container", 5);
+        val product =
+            Product(0, "box", "container", 5);
         assertEquals(0, product.index);
         assertEquals("box", product.name);
         assertEquals("container", product.type);
@@ -24,10 +26,18 @@ class ExampleUnitTest {
     }
     @Test
     fun sortIsCorrcect(){
-        val first = Product(5, "T-Shirt", "Clothes", 23);
-        val second = Product(9, "Pen", " chancellery", 58);
-        val third =Product(6, "potato", "food", 150);
-        val fourth = Product(2, "Charger", "Technics", 9);
+        val first =
+            Product(5, "T-Shirt", "Clothes", 23);
+        val second = Product(
+            9,
+            "Pen",
+            " chancellery",
+            58
+        );
+        val third =
+            Product(6, "potato", "food", 150);
+        val fourth =
+            Product(2, "Charger", "Technics", 9);
         val expected = arrayListOf<Product>(fourth, first, second, third);
         var tmp = arrayListOf<Product>(first, second, third, fourth);
         tmp = tmp.Sort();
