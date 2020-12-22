@@ -1,4 +1,4 @@
-package com.example.napoleonittask.fragments
+package com.example.napoleonittask.MainMenu
 
 import android.content.Intent
 import android.os.Bundle
@@ -27,3 +27,4 @@ class MenuFragment : Fragment(R.layout.fragment_menu){
         }
     }
 }
+

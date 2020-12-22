@@ -1,10 +1,9 @@
-package com.example.napoleonittask.Presenters
+package com.example.napoleonittask.MainMenu
 
-import android.content.Intent
-import com.example.napoleonittask.activities.MainActivity
+import com.example.napoleonittask.MainMenu.MenuView
 import moxy.MvpPresenter
 
-class MenuPresenter : MvpPresenter<MainActivity>(){
+class MenuPresenter : MvpPresenter<MenuView>(){
 
     var authState = false
 

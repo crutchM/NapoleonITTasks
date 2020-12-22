@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NapoleonITTask">
-        <activity android:name="com.example.napoleonittask.activities.MainActivity">
+        <activity android:name="com.example.napoleonittask.MainMenu.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.AuthActivity" />
-        <activity android:name=".activities.DeleteAddActivity" />
+        <activity android:name=".authorisation.AuthActivity" />
+        <activity android:name=".AddOrDeletePos.DeleteAddActivity" />
         <activity android:name=".activities.ListActivity" />
         <activity android:name=".activities.ModSearchActivity" />
         <activity android:name=".activities.MoreInfoActivity" />

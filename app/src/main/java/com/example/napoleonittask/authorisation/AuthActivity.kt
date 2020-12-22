@@ -1,25 +1,24 @@
-package com.example.napoleonittask.activities
+package com.example.napoleonittask.authorisation
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.example.napoleonittask.Presenters.LoginPresenter
+import com.example.napoleonittask.MainMenu.MainActivity
 import com.example.napoleonittask.R
-import com.example.napoleonittask.SearchViews.SearchViewLogin
 import kotlinx.android.synthetic.main.activity_authorisation.*
+import moxy.MvpAppCompatActivity
+import moxy.ktx.moxyPresenter
 
-class AuthActivity : AppCompatActivity(), SearchViewLogin {
-    private val presenter = LoginPresenter()
+class AuthActivity : MvpAppCompatActivity(),
+    SearchViewLogin {
+    private val presenter: LoginPresenter by moxyPresenter { LoginPresenter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authorisation)
         login.setOnClickListener{
-            presenter.validate(loginField.text.toString(), passwordField.text.toString())
-                val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("auth", "true")
-                startActivity(intent)
+                presenter.validate(loginField.text.toString(), passwordField.text.toString())
+
             }
         }
 
@@ -34,6 +33,12 @@ class AuthActivity : AppCompatActivity(), SearchViewLogin {
 
     override fun showPasswordError() {
         showErrorToast("пароль")
+    }
+
+    override fun goToActivity() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("AUTH", "true")
+        startActivity(intent)
     }
 
 }

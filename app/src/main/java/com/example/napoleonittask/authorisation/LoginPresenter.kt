@@ -1,8 +1,5 @@
-package com.example.napoleonittask.Presenters
-import com.example.napoleonittask.SearchViews.SearchViewLogin
+package com.example.napoleonittask.authorisation
 import moxy.MvpPresenter
-import moxy.viewstate.strategy.OneExecutionStateStrategy
-import moxy.viewstate.strategy.StateStrategyType
 
 
 class LoginPresenter : MvpPresenter<SearchViewLogin>() {
@@ -15,9 +12,14 @@ class LoginPresenter : MvpPresenter<SearchViewLogin>() {
         when{
             !loginIsCorrect(login) -> viewState.showLoginError()
             !passWordIsCorrect(password) -> viewState.showPasswordError()
-        }
-    }
+            else ->{
+                viewState.goToActivity()
 
+            }
+
+        }
+
+    }
 
     fun loginIsCorrect(login : String) : Boolean{
         if(login == null) return false

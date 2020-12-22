@@ -17,11 +17,25 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="186dp"
         android:layout_height="44dp"
         android:hint="write id of product"
         app:layout_constraintBottom_toTopOf="@+id/deleteButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></EditText>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"></EditText>
+
+    <EditText
+        android:layout_width="186"
+        android:layout_height="44"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="89dp"
+        android:hint="Write count(or ALL)"
+        app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"></EditText>
 </androidx.constraintlayout.widget.ConstraintLayout>
